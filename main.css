@@ -1,0 +1,11 @@
+.zingChart {
+    width: 30%;
+}
+
+.zingGrid {
+    width: 60%;
+}
+
+body {
+    display: flex;
+}
