@@ -26,22 +26,36 @@
         ></script>
     </head>
     <body>
-        <section class="zingChart">
-            <h1>ZingChart</h1>
-            <div id="myChart"></div>
-        </section>
-        <section class="zingGrid">
-            <h1>ZingGrid</h1>
-            <zing-grid
-                caption="Hello Futurama"
-                sorter
-                search
-                pager
-                page-size="3"
-                page-size-options="2,3,6"
-            >
-            </zing-grid>
-        </section>
+        <nav>
+            <div class="title">
+                Fitness Tracker
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>Track</li>
+                    <li>Calories</li>
+                    <li>Recipe</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <section class="zingChart">
+                <h1>Calory Intake</h1>
+                <div id="myChart"></div>
+            </section>
+            <section class="zingGrid">
+                <h1>Daily Plan</h1>
+                <zing-grid
+                    caption="Monday Plan"
+                    sorter
+                    search
+                    editor-controls
+                >
+                </zing-grid>
+            </section>
+        </div>
         <script src="./index.js"></script>
     </body>
 </html>

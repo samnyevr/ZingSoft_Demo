@@ -1,11 +1,66 @@
+.content {
+    display: flex;
+
+}
+
 .zingChart {
-    width: 30%;
+    background-color: rgb(186, 226, 226);
+    border-radius: 10px;
+    width: 35%;
+    margin: 20px;
 }
 
 .zingGrid {
+    background-color: rgb(186, 226, 226);
+    border-radius: 10px;
     width: 60%;
+    margin: 20px;
 }
 
+h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+}
+
+#myChart {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+root,
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 2rem;
+    background-color: rgb(210, 255, 255);
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.navbar {
+    width: 50%;
 }

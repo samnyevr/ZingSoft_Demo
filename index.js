@@ -4,61 +4,70 @@
 let myConfig = {
     type: 'ring',
 
-    title: {
-      text: 'Calory Intake',
-      fontSize: 24,
-    },
     legend: {
       draggable: true,
     },
     series: [
       {
-        "values":[5]
-        },
-    {
-        "values":[55]
-        },
-    {
-        "values":[30]
-        },
-    {
-        "values":[28]
-        },
-    {
-        "values":[15]
-        }
+        "values":[5],
+        "text": "Veggies"
+      },
+      {
+        "values":[55],
+        "text": "Proteins"
+      },
+      {
+        "values":[30],
+        "text": "Fruits"
+      },
+      {
+        "values":[28],
+        "text": "Carbs"
+      },
+      { 
+        "values":[15],
+        "text": "Water"
+      }
     ]
   };
 
 zingchart.render({
     id: 'myChart',
     data: myConfig,
+    backgroundColor: "rgb(186, 226, 226)"
   });
+
 
 window.onload = () => {
   const data = [{
-      "name": "Philip J. Fry",
-      "origin": "Earth"
+      "Workout Name": "Bench Press",
+      "Sets": "3",
+      "Reps": "8"
     },
     {
-      "name": "Turanga Leela",
-      "origin": "Earth"
+      "Workout Name": "Dead Lift",
+      "Sets": "5",
+      "Reps": "4"
     },
     {
-      "name": "Bender Bending Rodriguez",
-      "origin": "Earth"
+      "Workout Name": "Squat",
+      "Sets": "5",
+      "Reps": "3"
     },
     {
-      "name": "Amy Wong",
-      "origin": "Mars"
+      "Workout Name": "Bicep Curl",
+      "Sets": "2",
+      "Reps": "9"
     },
     {
-      "name": "Doctor John Zoidberg",
-      "origin": "Decapod 10"
+      "Workout Name": "Leg Press",
+      "Sets": "3",
+      "Reps": "8"
     },
     {
-      "name": "Lord Nibbler",
-      "origin": "Earth"
+      "Workout Name": "Lateral Raise",
+      "Sets": "3",
+      "Reps": "10"
     }
   ]
 
